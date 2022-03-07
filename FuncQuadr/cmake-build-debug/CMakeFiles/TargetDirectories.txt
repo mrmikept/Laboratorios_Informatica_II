@@ -1,0 +1,3 @@
+/home/mike/Desktop/Universidade/Labs/FuncQuadr/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mike/Desktop/Universidade/Labs/FuncQuadr/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mike/Desktop/Universidade/Labs/FuncQuadr/cmake-build-debug/CMakeFiles/FuncQuadr.dir
