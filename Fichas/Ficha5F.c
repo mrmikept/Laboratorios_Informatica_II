@@ -47,9 +47,9 @@ F = 2
 
 int main()
 {
-    int F = 0;
-    char input[52];
-    int vendas[26][26];
+    int F = 0; //Frequencia minima.
+    char input[52]; //string para guardar o input
+    int vendas[26][26]; //array2D para guardar a quantidade de vezes que cada cliente compra um produto
     // Vamos inicializar o array2D todo a 0.
     for (int i = 0; i < 26; i++)
     {
@@ -62,8 +62,8 @@ int main()
     // Usando o scanf vamos receber o valor de frequencia minima F
     if ((scanf("%d", &F) == 1))
     {
-        // Vamos usar o fgets para receber a linha com os artigos vendidos e, ignorando os \n, \n e ' ' vamos colocar os artigos vendidos numa array2D onde as linhas e colunas representam os artigos(A..Z)
-        // sabendo o código ASCII dos caracteres(A = 65, B = 66, ..., Z = 90) subtraindo 65 sabemos em que coluna e linha somar 1.
+        // Vamos usar o fgets para receber a linha com os artigos vendidos e, ignorando os \n, \0 e ' ' vamos colocar os artigos vendidos no array vendas onde as linhas e colunas representam os artigos(A..Z)
+        // sabendo o código ASCII dos caracteres(A = 65, B = 66, ..., Z = 90) subtraindo 65 sabemos em que coluna e linha somar 1 referente ao artigo.
         while ((fgets(input, 52, stdin)) != NULL)
         {
             int tamanho = strlen(input);
@@ -84,7 +84,7 @@ int main()
             }
         }
 
-        // Para os pares de produtos aparecerem por ordem no output só precisamos de imprimir o triangulo superior da matriz, então defenimos um limite l.
+        // Para os pares de produtos aparecerem por ordem no output só precisamos de analisar o triangulo superior da matriz(array2D vendas), então defenimos um limite l.
         int limite = 1;
         for (int i = 0; i < 26; i++)
         {
