@@ -1,0 +1,10 @@
+int createString(STACK *s, char **line);
+int subStringSep(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int buscaindstr(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int buscinicioStr(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int buscaFinalStr(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int substring(STACK *s, STACK_ELEM substr, STACK_ELEM string);
+int menorStr(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int igualStr(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int maiorStr(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int stringsHandle(STACK *s, char *token);

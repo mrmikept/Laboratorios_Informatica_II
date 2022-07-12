@@ -1,0 +1,12 @@
+void printArray(STACK *a);
+char *getArrayLine(char **line);
+int createArray(STACK *s, char *token, char **line);
+int range(STACK *s, STACK_ELEM x);
+int addArrayString(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int addarraynvezes(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int tiraelementos(STACK *s, STACK_ELEM x);
+int buscindArr(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int buscinicioArr(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int buscaFinalArr(STACK *s, STACK_ELEM x, STACK_ELEM y);
+int removeFirstElem(STACK *s, STACK_ELEM x);
+int removeLastElem(STACK *s, STACK_ELEM x);
